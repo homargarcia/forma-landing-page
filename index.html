@@ -2,73 +2,137 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Forma es un estudio ficticio de interiores. Muestra original de una landing page adaptable, con filtros y generador de brief local.">
-  <meta name="theme-color" content="#f3efe7">
-  <title>Forma — espacios con intención · Demo conceptual</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Forma: estudio ficticio de interiores. Una muestra de diseño y desarrollo web con imágenes conceptuales generadas con IA e interacciones locales.">
+  <meta name="theme-color" content="#dedad3">
+  <title>Forma — dar forma al habitar · Demo conceptual</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Forma, inicio">forma<span>↗</span></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menú <span aria-hidden="true">☰</span></button>
+    <a class="wordmark" href="#inicio" aria-label="Forma, inicio">forma<span aria-hidden="true">.</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menú <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg></button>
     <nav id="navigation" aria-label="Navegación principal">
-      <a href="#proyectos">Proyectos</a><a href="#estudio">El estudio</a><a href="#proceso">Cómo trabajamos</a><a class="nav-cta" href="#brief">Diseñemos tu espacio <span aria-hidden="true">↗</span></a>
+      <a href="#proyectos">Los conceptos</a>
+      <a href="#materia">La materia</a>
+      <a href="#estudio">El estudio</a>
+      <a class="nav-action" href="#brief">Empezar una idea <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
-  <main id="main">
-    <section id="inicio" class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> INTERIORES CON INTENCIÓN</p>
-        <h1>Espacios para<br>vivir <em>mejor.</em></h1>
-        <p class="hero-intro">Luz, materia y una idea clara. Diseñamos espacios que acompañan tu manera de habitar.</p>
-        <a class="button dark" href="#proyectos">Explorar los conceptos <span aria-hidden="true">↗</span></a>
-        <div class="hero-note"><span aria-hidden="true">✳</span><p>Diseño pensado desde lo cotidiano.<br><strong>Un detalle puede cambiarlo todo.</strong></p></div>
+  <main id="contenido">
+    <section class="hero page-gutter" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-top">
+        <h1 id="hero-title" class="reveal">Dar forma<br>al habitar.</h1>
+        <div class="hero-intro reveal">
+          <p>Interiores que empiezan por la luz y se construyen alrededor de tu manera de vivir.</p>
+          <a class="text-action" href="#proyectos">Explorar los conceptos <span aria-hidden="true">↘</span></a>
+        </div>
       </div>
-      <div class="hero-art">
-        <svg viewBox="0 0 640 640" role="img" aria-labelledby="art-title art-desc">
-          <title id="art-title">Una casa imaginaria, entre luz y sombra</title>
-          <desc id="art-desc">Ilustración geométrica original de un interior, con un arco terracota, una lámpara y un banco de madera.</desc>
-          <defs><linearGradient id="wall" x1="0" x2="1"><stop stop-color="#dfd7c7"/><stop offset="1" stop-color="#f0e8dc"/></linearGradient><linearGradient id="floor" x1="0" x2="1"><stop stop-color="#bca58a"/><stop offset="1" stop-color="#d4c5ad"/></linearGradient><pattern id="lines" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M0 36 36 0" stroke="#efe5d3" stroke-width="1"/></pattern></defs>
-          <rect width="640" height="640" fill="url(#wall)"/>
-          <path d="M0 448 640 420v220H0Z" fill="url(#floor)"/><path d="M0 448 640 420v220H0Z" fill="url(#lines)" opacity=".6"/>
-          <path d="M276 450V221a122 122 0 0 1 244 0v218Z" fill="#b45b3d"/>
-          <path d="M325 446V234a75 75 0 0 1 150 0v197Z" fill="#243d36"/>
-          <path d="M326 236 475 430H326Z" fill="#42554a"/>
-          <path d="M476 128 640 7v221L520 294V218a122 122 0 0 0-44-90" fill="#fff8e6" opacity=".58"/>
-          <path d="M0 435 235 506 180 555 0 472Z" fill="#90775e" opacity=".24"/>
-          <path d="M40 176v245m0-90 145-96" stroke="#243d36" stroke-width="9" fill="none"/>
-          <path d="M178 185q70-15 86 73l-111 22q-18-63 25-95" fill="#f7f2e6"/><path d="m153 280 110-22" stroke="#baac94" stroke-width="5"/>
-          <ellipse cx="246" cy="542" rx="135" ry="28" fill="#977b61" opacity=".3"/>
-          <path d="m122 490 247-15 94 39-257 23Z" fill="#9b5b36"/><path d="m122 490 84 47v18l-84-45Z" fill="#714425"/><path d="m206 537 257-23v20l-257 21Z" fill="#85512f"/>
-          <path d="m148 519 18 8v66l-18-7Zm277 19 18-2v50l-18 4Z" fill="#714425"/>
-          <path d="M511 421q25-70 59-35-20 6-31 41 50-48 54-6-27-2-55 19-28-2-27-19Z" fill="#4c6346"/>
-          <path d="m512 437 50-3-7 72-30 5Z" fill="#c57b53"/>
-          <path d="M398 49v47M375 73h47" stroke="#bca58a" stroke-width="1"/>
-        </svg>
-        <div class="art-label"><span>01 / LUZ Y MATERIA</span><span>Concepto residencial ↗</span></div>
-        <span class="art-stamp" aria-hidden="true"><b>F</b><span>CONCEPTO</span></span>
+      <div class="hero-composition">
+        <p class="hero-side">Luz que entra.<br>Materia que permanece.<br>Espacio para lo cotidiano.</p>
+        <figure class="hero-image reveal">
+          <img src="assets/umbral.webp" width="1536" height="1024" alt="Visualización conceptual de una sala de piedra clara, sofá de lino y un gran ventanal hacia un patio verde." fetchpriority="high">
+          <figcaption><span>Casa Umbral</span><span>Residencial · Visualización conceptual</span></figcaption>
+        </figure>
       </div>
+      <p class="demo-caption">Muestra de desarrollo web. Estudio ficticio e imágenes generadas con IA.</p>
     </section>
-    <div class="ticker" aria-label="Enfoque del estudio"><span>Luz natural</span><span aria-hidden="true">✳</span><span>Materiales honestos</span><span aria-hidden="true">✳</span><span>Espacios que respiran</span><span aria-hidden="true">✳</span><span>Diseño a tu medida</span></div>
-    <section id="proyectos" class="section-shell work-section">
-      <div class="section-heading"><div><p class="eyebrow">01 — EXPLORA LAS IDEAS</p><h2>Un espacio.<br>Muchas posibilidades.</h2></div><p>Cada concepto explora una forma diferente de conectar la función con lo que nos hace sentir en casa.</p></div>
-      <div class="work-controls"><div class="filters" role="group" aria-label="Filtrar conceptos"><button class="filter active" data-filter="all" aria-pressed="true">Todos</button><button class="filter" data-filter="home" aria-pressed="false">Residencial</button><button class="filter" data-filter="business" aria-pressed="false">Comercial</button></div><p id="project-count" aria-live="polite">3 conceptos</p></div>
+
+    <section class="work page-gutter" id="proyectos" aria-labelledby="work-title">
+      <div class="section-top">
+        <h2 id="work-title" class="reveal">Distintas formas<br>de habitar.</h2>
+        <div class="work-tools reveal">
+          <div class="filters" role="group" aria-label="Filtrar conceptos">
+            <button class="filter is-active" data-filter="all" aria-pressed="true">Todos</button>
+            <button class="filter" data-filter="home" aria-pressed="false">Residencial</button>
+            <button class="filter" data-filter="business" aria-pressed="false">Comercial</button>
+          </div>
+          <p id="project-count" aria-live="polite">3 conceptos</p>
+        </div>
+      </div>
       <div class="project-grid">
-        <article class="project-card" data-category="home"><div class="project-art room-one" role="img" aria-label="Ilustración abstracta de una sala con arco, banco y planta"><div class="arch"></div><div class="bench"></div><div class="plant"></div><span class="art-number">01</span></div><div class="project-meta"><h3>Casa Umbral</h3><span>Residencial · Concepto</span></div></article>
-        <article class="project-card" data-category="business"><div class="project-art room-two" role="img" aria-label="Ilustración abstracta de una cafetería con mesa circular y ventanas"><div class="window"></div><div class="round-table"></div><div class="lamp"></div><span class="art-number">02</span></div><div class="project-meta"><h3>Café Terracota</h3><span>Comercial · Concepto</span></div></article>
-        <article class="project-card" data-category="home"><div class="project-art room-three" role="img" aria-label="Ilustración abstracta de un dormitorio con tonos verdes y paneles de madera"><div class="wood-panel"></div><div class="bed"></div><div class="picture"></div><span class="art-number">03</span></div><div class="project-meta"><h3>Refugio Verde</h3><span>Residencial · Concepto</span></div></article>
+        <article class="project-card project-home reveal" data-category="home">
+          <a href="#brief" aria-label="Preparar una idea inspirada en Casa Umbral">
+            <div class="project-image"><img src="assets/umbral.webp" width="1536" height="1024" loading="lazy" alt="Casa Umbral: luz de tarde, piedra y madera en un salón conceptual."><span class="image-action" aria-hidden="true">↗</span></div>
+            <div class="project-meta"><h3>Casa Umbral</h3><p>Piedra, luz y una pausa.</p></div>
+          </a>
+        </article>
+        <article class="project-card project-cafe reveal" data-category="business">
+          <a href="#brief" aria-label="Preparar una idea inspirada en Café Terracota">
+            <div class="project-image"><img src="assets/cafe.webp" width="1536" height="1024" loading="lazy" alt="Café Terracota: barra de madera oscura y mesas de piedra junto a un ventanal."><span class="image-action" aria-hidden="true">↗</span></div>
+            <div class="project-meta"><h3>Café Terracota</h3><p>Una mesa. Un buen momento.</p></div>
+          </a>
+        </article>
+        <article class="project-card project-study reveal" data-category="home">
+          <a href="#brief" aria-label="Preparar una idea inspirada en Refugio Verde">
+            <div class="project-image"><img src="assets/refugio.webp" width="1536" height="1024" loading="lazy" alt="Refugio Verde: rincón de lectura con estantería de nogal y un sillón junto al jardín."><span class="image-action" aria-hidden="true">↗</span></div>
+            <div class="project-meta"><h3>Refugio Verde</h3><p>Un lugar para quedarse.</p></div>
+          </a>
+        </article>
+        <p class="work-note">Tres exploraciones de un mismo principio: dejar que cada material y cada entrada de luz encuentren su lugar.<br><br>Son conceptos ficticios; no son obras ejecutadas ni proyectos de clientes.</p>
       </div>
     </section>
-    <section id="estudio" class="studio-section section-shell">
-      <div><p class="eyebrow">02 — EL ESTUDIO</p><h2>Menos ruido.<br><em>Más intención.</em></h2><p class="studio-copy">Un buen espacio empieza por escuchar. En este estudio conceptual, el diseño se construye alrededor de las personas: cómo viven, cómo trabajan y qué necesitan de su entorno.</p><a class="text-link" href="#brief">Cuéntanos qué imaginas <span aria-hidden="true">↗</span></a></div>
-      <div class="service-list"><article><span>01</span><div><h3>Interiores residenciales</h3><p>Ambientes equilibrados, funcionales y con carácter. Desde una habitación hasta una idea integral.</p></div></article><article><span>02</span><div><h3>Espacios comerciales</h3><p>Conceptos que traducen una marca a materiales, recorridos y experiencias.</p></div></article><article><span>03</span><div><h3>Dirección de concepto</h3><p>Una propuesta visual para alinear distribución, paleta y selección de materiales.</p></div></article></div>
+
+    <section class="material-section page-gutter" id="materia" aria-labelledby="material-title">
+      <div class="material-copy">
+        <h2 id="material-title" class="reveal">La forma empieza<br>en la materia.</h2>
+        <p class="reveal">La superficie que tocas, la luz que refleja y el tiempo que deja su huella. Explora los materiales de este universo.</p>
+        <div class="material-picker reveal" role="group" aria-label="Explorar materiales">
+          <button class="material-choice is-active" data-material="piedra" aria-pressed="true"><span class="swatch stone" aria-hidden="true"></span>Piedra</button>
+          <button class="material-choice" data-material="madera" aria-pressed="false"><span class="swatch wood" aria-hidden="true"></span>Madera</button>
+          <button class="material-choice" data-material="lino" aria-pressed="false"><span class="swatch linen" aria-hidden="true"></span>Lino</button>
+        </div>
+        <div class="material-description" aria-live="polite">
+          <h3 id="material-name">Travertino claro</h3>
+          <p id="material-description">Poros abiertos, tacto mineral y una luz que se vuelve suave. El punto de equilibrio del espacio.</p>
+        </div>
+      </div>
+      <figure class="material-image reveal"><img src="assets/materia.webp" width="1536" height="1024" loading="lazy" alt="Detalle conceptual de la unión entre piedra travertino, madera oscura y un muro de cal."><figcaption>Un encuentro de texturas. Visualización generada con IA.</figcaption></figure>
     </section>
-    <section id="proceso" class="section-shell process-section"><div class="section-heading"><div><p class="eyebrow">03 — DEL PRIMER TRAZO AL CONCEPTO</p><h2>Una idea clara,<br>paso a paso.</h2></div><p>Un proceso sencillo para dar forma a lo que imaginas, con espacio para conversar y ajustar.</p></div><ol class="process-grid"><li><span>01 / ESCUCHAR</span><h3>Entender tu espacio</h3><p>Necesidades, referencias y prioridades. Todo empieza con un brief bien definido.</p></li><li><span>02 / EXPLORAR</span><h3>Encontrar la dirección</h3><p>Composición, luz y materiales. Construimos una narrativa visual coherente.</p></li><li><span>03 / DEFINIR</span><h3>Dar forma al concepto</h3><p>Ajustamos los detalles y organizamos una propuesta que puedas revisar.</p></li></ol></section>
-    <section id="brief" class="brief-section section-shell"><div class="brief-copy"><p class="eyebrow">04 — EMPECEMOS POR UNA IDEA</p><h2>¿Qué espacio<br>tienes <em>en mente?</em></h2><p>Explora este generador de brief. Funciona en tu navegador y prepara un archivo de texto; no envía información ni genera una cotización.</p><div class="brief-marker" aria-hidden="true">↗</div></div><form id="brief-form"><div class="field-row"><label>Tipo de espacio<select name="space" id="space"><option value="Residencial">Residencial</option><option value="Comercial">Comercial</option></select></label><label>Dirección visual<select name="style" id="style"><option value="Cálida y natural">Cálida y natural</option><option value="Minimalista y serena">Minimalista y serena</option><option value="Expresiva y con color">Expresiva y con color</option></select></label></div><label class="range-label" for="area">Superficie aproximada <output id="area-output" for="area">60 m²</output></label><input type="range" id="area" name="area" min="15" max="200" step="5" value="60"><div class="range-limits"><span>15 m²</span><span>200 m²</span></div><label>Tu idea en pocas palabras<textarea id="idea" name="idea" rows="3" maxlength="500" placeholder="Por ejemplo: una sala luminosa para leer y compartir." required></textarea></label><button class="button dark" type="submit">Preparar mi brief <span aria-hidden="true">↗</span></button><p class="form-note">Demo local · Sin registro · No se recopilan datos</p><div id="brief-result" class="brief-result" hidden aria-live="polite"><h3>Tu idea ya tiene un punto de partida.</h3><p id="brief-summary"></p><button type="button" id="download-brief" class="text-link">Descargar el brief (.txt) <span aria-hidden="true">↓</span></button></div></form></section>
+
+    <section class="studio-section page-gutter" id="estudio" aria-labelledby="studio-title">
+      <h2 id="studio-title" class="reveal">Escuchar.<br>Después, diseñar.</h2>
+      <div class="studio-body">
+        <p class="studio-statement reveal">Un espacio no empieza en un plano. Empieza en cómo quieres sentirte al llegar.</p>
+        <div class="studio-details">
+          <p class="reveal">Forma es un estudio conceptual de interiores. Su propuesta reúne distribución, luz y materiales en una dirección que puedas entender y hacer tuya.</p>
+          <div class="process-list">
+            <div class="reveal"><h3>Escuchar</h3><p>Hábitos, referencias y prioridades. Definir lo que importa antes del primer trazo.</p></div>
+            <div class="reveal"><h3>Explorar</h3><p>Probar composiciones y materiales hasta encontrar una idea que lo conecte todo.</p></div>
+            <div class="reveal"><h3>Dar forma</h3><p>Organizar el concepto y sus decisiones para poder revisarlo con claridad.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brief-section page-gutter" id="brief" aria-labelledby="brief-title">
+      <div class="brief-copy">
+        <h2 id="brief-title" class="reveal">Tu idea,<br>un primer trazo.</h2>
+        <p class="reveal">Prueba el generador de brief. Resume lo que imaginas y descarga un punto de partida para tu espacio.</p>
+        <p class="brief-honesty">Esta demo funciona en tu navegador. No envía datos, no contacta a un estudio y no genera una cotización.</p>
+      </div>
+      <form id="brief-form" class="reveal">
+        <div class="field-row">
+          <label for="space">Tipo de espacio<select name="space" id="space"><option>Residencial</option><option>Comercial</option></select></label>
+          <label for="style">Dirección visual<select name="style" id="style"><option>Cálida y natural</option><option>Minimalista y serena</option><option>Expresiva y con color</option></select></label>
+        </div>
+        <label class="range-label" for="area">Superficie aproximada <output id="area-output" for="area">60 m²</output></label>
+        <input type="range" id="area" name="area" min="15" max="200" step="5" value="60">
+        <div class="range-limits"><span>15 m²</span><span>200 m²</span></div>
+        <label for="idea">¿Qué quieres transformar?<textarea id="idea" name="idea" rows="3" maxlength="500" placeholder="Una sala luminosa para leer y compartir…" required></textarea></label>
+        <button class="button" type="submit">Preparar mi brief <span aria-hidden="true">↗</span></button>
+        <div id="brief-result" class="brief-result" hidden aria-live="polite"><h3>Tu idea ya tiene forma.</h3><p id="brief-summary"></p><button type="button" id="download-brief" class="text-action">Descargar el brief (.txt) <span aria-hidden="true">↓</span></button></div>
+      </form>
+    </section>
   </main>
-  <footer class="site-footer section-shell"><a class="brand" href="#inicio">forma<span>↗</span></a><p>Estudio ficticio. Diseño, ilustraciones y proyectos conceptuales originales.<br>Muestra de desarrollo web asistido por IA; no representa clientes ni servicios reales de arquitectura.</p><a href="#inicio">Volver arriba ↑</a></footer>
+  <footer class="site-footer page-gutter">
+    <div class="footer-top"><p>Espacio para lo que importa.</p><a href="#inicio" class="text-action">Volver arriba <span aria-hidden="true">↑</span></a></div>
+    <div class="footer-wordmark" aria-hidden="true">forma.</div>
+    <div class="footer-legal"><p>Marca y proyectos ficticios. Imágenes conceptuales generadas con IA.<br>Muestra original de diseño y desarrollo web asistido por IA.</p><p>Concepto de portafolio por Homar G.<br>Sin servicios reales de arquitectura.</p></div>
+  </footer>
 </body>
 </html>
