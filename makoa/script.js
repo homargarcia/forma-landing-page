@@ -33,11 +33,11 @@ function setDemoMode(mode){
 document.querySelectorAll('[data-demo]').forEach(button=>button.addEventListener('click',()=>{
  demoOpener=button;closeNav();setDemoMode(button.dataset.demo);
  if(button.hasAttribute('data-selected-method')){const method=document.querySelector('#method-name').textContent;const item=catalogue.find(p=>p.name===method);if(item)productSelect.value=String(item.id);}
- demoDialog.showModal();document.body.classList.add('demo-open');
+ demoDialog.showModal();demoDialog.scrollTop=0;document.body.classList.add('demo-open');
 }));
 document.querySelectorAll('[data-demo-mode]').forEach(b=>b.addEventListener('click',()=>setDemoMode(b.dataset.demoMode)));
 document.querySelector('.demo-close').addEventListener('click',()=>demoDialog.close());
-demoDialog.addEventListener('close',()=>{document.body.classList.remove('demo-open');if(demoOpener?.isConnected)demoOpener.focus();});
+demoDialog.addEventListener('close',()=>{document.body.classList.remove('demo-open');if(demoOpener?.isConnected)(demoOpener.getClientRects().length?demoOpener:toggle).focus();});
 function renderCart(){
  cartList.replaceChildren();let total=0,count=0;
  cart.forEach((quantity,id)=>{
