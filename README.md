@@ -34,3 +34,8 @@ Diseño, desarrollo y revisión preparados con asistencia de IA. Imágenes de Ca
 STIX Two Text: STIX Fonts project, distribuida bajo SIL Open Font License 1.1. Se conserva la licencia de la fuente.
 
 Repositorio público: [homargarcia/forma-landing-page](https://github.com/homargarcia/forma-landing-page). Demo en [GitHub Pages](https://homargarcia.github.io/forma-landing-page/).
+
+
+## CTA de las muestras (18 de octubre de 2026)
+
+Forma incorpora un CTA principal hacia el generador local de brief y uno secundario hacia los conceptos. MAKOA añade botones de pedido y reserva, selección de productos con cantidades y total referencial, y un resumen de mesa con fecha/hora/personas. Son simulaciones que se ejecutan en memoria del navegador: no envían solicitudes, no usan almacenamiento persistente ni solicitan datos personales. Los precios siguen siendo referenciales, transcritos de la carta aportada.
