@@ -1,6 +1,6 @@
 # Forma - muestra de desarrollo web
 
-Landing page conceptual de un estudio ficticio de interiores. Diseño y desarrollo originales preparados con asistencia de IA para el portafolio de Homar G. La marca, los proyectos y las imágenes no representan clientes ni obras ejecutadas.
+Landing page conceptual de un estudio ficticio de interiores. Diseño y desarrollo originales para el portafolio de Homar G. La marca, los proyectos y las imágenes no representan clientes ni obras ejecutadas.
 
 ## Abrir
 
@@ -29,7 +29,7 @@ Las comprobaciones se hicieron con el navegador disponible; no equivalen a certi
 
 ## Créditos
 
-Imágenes de Casa Umbral, Café Terracota, Refugio Verde y detalle de materiales: visualizaciones conceptuales generadas con IA para esta muestra. No son fotografías documentales ni imágenes de terceros. El aviso aparece junto a la presentación y en el pie de página.
+Diseño, desarrollo y revisión preparados con asistencia de IA. Imágenes de Casa Umbral, Café Terracota, Refugio Verde y detalle de materiales: visualizaciones conceptuales generadas con IA para esta muestra. No son fotografías documentales ni imágenes de terceros. Su carácter conceptual se identifica junto a la presentación y en el pie de página.
 
 STIX Two Text: STIX Fonts project, distribuida bajo SIL Open Font License 1.1. Se conserva la licencia de la fuente.
 
